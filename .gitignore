@@ -1,0 +1,8 @@
+auth.json
+accounts.json
+handoff.json
+quota-cache.json
+*.token
+*.secret
+.env
+node_modules/
