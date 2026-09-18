@@ -1,4 +1,4 @@
-﻿param(
+param(
     [switch]$CoreOnly,
     [switch]$SkipOpenCodeCli
 )
@@ -8,7 +8,7 @@ Set-StrictMode -Version Latest
 
 function Require-Command([string]$Name, [string]$Hint) {
     if (-not (Get-Command $Name -ErrorAction SilentlyContinue)) {
-        throw "Comando '$Name' não encontrado. $Hint"
+        throw "Comando '$Name' nao encontrado. $Hint"
     }
 }
 
@@ -63,12 +63,12 @@ Copy-Item -Force (Join-Path $PSScriptRoot "extensions\official-todo.ts") (Join-P
 
 Run-Native pi @("update", "--models")
 
-Write-Host "`nInstalação concluída." -ForegroundColor Green
-Write-Host "Próximos passos:" -ForegroundColor Yellow
+Write-Host "`nInstalacao concluida." -ForegroundColor Green
+Write-Host "Proximos passos:" -ForegroundColor Yellow
 Write-Host "  1. Abra: pi"
 Write-Host "  2. Adicione suas contas com /codex-account-add (repita para cada conta)."
-Write-Host "  3. Rode /reload após os logins."
+Write-Host "  3. Rode /reload apos os logins."
 Write-Host "  4. Selecione modelos em /model."
 Write-Host "  5. Configure o handoff em /codex-handoff-config."
-Write-Host "  6. Siga CONFIGURACAO.md para tema, Guardian, contas e preferências."
-Write-Host "  7. Rode .\verify.ps1 para conferir a instalação."
+Write-Host "  6. Siga CONFIGURACAO.md para tema, Guardian, contas e preferencias."
+Write-Host "  7. Rode .\verify.ps1 para conferir a instalacao."

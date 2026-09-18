@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = "Stop"
+$ErrorActionPreference = "Stop"
 
 $packages = @(
     "https://github.com/rodrigojager/pi-codex-account-pool",
@@ -19,10 +19,10 @@ foreach ($package in $packages) {
     Write-Host "`nAtualizando $package" -ForegroundColor Cyan
     & pi update $package
     if ($LASTEXITCODE -ne 0) {
-        Write-Warning "Não foi possível atualizar $package (talvez não esteja instalado)."
+        Write-Warning "Nao foi possivel atualizar $package (talvez nao esteja instalado)."
     }
 }
 
 & pi update --models
-if ($LASTEXITCODE -ne 0) { throw "Falha ao atualizar catálogos." }
-Write-Host "`nAtualização concluída. Execute /reload dentro do Pi." -ForegroundColor Green
+if ($LASTEXITCODE -ne 0) { throw "Falha ao atualizar catalogos." }
+Write-Host "`nAtualizacao concluida. Execute /reload dentro do Pi." -ForegroundColor Green
