@@ -11,6 +11,7 @@
   "notes": [
     "No OAuth tokens or auth.json files are included.",
     "Codex accounts must be added again on each machine.",
-    "The Guardian is installed but disabled persistently by default."
+    "Guardian state is personal configuration and is documented instead of copied.",
+    "No global skills are bundled; none were installed as part of this setup."
   ]
 }

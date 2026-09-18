@@ -10,11 +10,28 @@ Kit reproduzível para instalar no PC de casa o ambiente Pi usado por Rodrigo.
 - Verificador de pacotes, providers e modelos.
 - Manifesto com os commits auditados.
 
+### Plugins incluídos no modo completo
+
+- `pi-codex-account-pool`
+- `pi-check-agent-quota`
+- `pi-opencode-direct`
+- `opencode-pi`
+- `pi-guardian`
+- `pi-sidebar-tui`
+- `pi-opencode-theme`
+- `@mystilleef/pi-subagent`
+- `@narumitw/pi-goal`
+- `@plannotator/pi-extension`
+- `pi-session-recall`
+- `pi-web-access`
+- extensão `todo` oficial do Pi
+
 ## O que não é transportado
 
 - OAuth tokens, API keys, `auth.json` ou contas do pool.
 - Conta ativa, modelo padrão e preferências pessoais.
 - Cache de quota e handoffs privados.
+- Skills globais compartilhadas com Codex e outros agentes (`find-skills`, `last30days`, `understand-*`), intencionalmente fora deste pack.
 
 Essas opções estão descritas em [CONFIGURACAO.md](CONFIGURACAO.md).
 
