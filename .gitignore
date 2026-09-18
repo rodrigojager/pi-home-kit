@@ -6,3 +6,5 @@ quota-cache.json
 *.secret
 .env
 node_modules/
+pi-home-kit.zip
+SHA256SUMS.txt
