@@ -1,0 +1,55 @@
+{
+  "pi": "1.0.0",
+  "node": "26.1.0",
+  "installedSources": {
+    "subagent": "https://github.com/rodrigojager/pi-subagent@v0.12.4-rodrigo.1",
+    "sidebar": "local\\pi-sidebar-tui",
+    "todo": "local\\rpiv-todo",
+    "herdr": "local\\pi-herdr-status",
+    "i18n": "local\\node_modules\\@juicesharp\\rpiv-i18n"
+  },
+  "publishedCopies": {
+    "subagent": "https://github.com/rodrigojager/pi-subagent",
+    "sidebar": "https://github.com/rodrigojager/pi-sidebar-tui",
+    "todo": "https://github.com/rodrigojager/rpiv-todo",
+    "herdr": "https://github.com/rodrigojager/pi-herdr-status"
+  },
+  "versions": {
+    "subagent": "0.12.4-rodrigo.1",
+    "sidebar": "1.7.5-rodrigo.3",
+    "todo": "2.12.0-rodrigo.1",
+    "herdr": "0.2.1-rodrigo.1",
+    "i18n": "2.12.0"
+  },
+  "extensionExclusions": [
+    "!extensions/official-todo.ts"
+  ],
+  "rpivTodoConfig": {
+    "maxWidgetLines": 8,
+    "collapseKey": "alt+t"
+  },
+  "rpivLocale": {
+    "locale": "pt-BR"
+  },
+  "sidebarShortcut": "ctrl+shift+t",
+  "herdrPiRows": [
+    [
+      "state_icon",
+      {
+        "token": "terminal_title_stripped",
+        "dim": false,
+        "fg": "#a0a0a0"
+      }
+    ],
+    [
+      {
+        "token": "workspace",
+        "dim": true,
+        "bold": false
+      }
+    ],
+    [
+      "$model_info"
+    ]
+  ]
+}

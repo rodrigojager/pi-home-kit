@@ -1,5 +1,7 @@
 # Pi Home Kit
 
+> Perfil mais recente: [UI, tarefas e subagentes — 2026-10-02](profiles/2026-10-02-ui/README.md). As cópias e configurações personalizadas estão documentadas nesse perfil; o instalador abaixo mantém a seleção histórica.
+
 Kit reproduzível para instalar no PC de casa o ambiente Pi usado por Rodrigo.
 
 ## O que é transportado
