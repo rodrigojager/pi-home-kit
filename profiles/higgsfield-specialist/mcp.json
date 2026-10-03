@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "higgsfield": {
+      "type": "http",
+      "url": "https://mcp.higgsfield.ai/mcp",
+      "exposure": "deferred",
+      "description": "Higgsfield AI media services: model discovery, cost estimates, image/video/audio generation, editing, and job delivery.",
+      "enabled": true,
+      "timeout": 120
+    }
+  }
+}

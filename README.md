@@ -90,6 +90,10 @@ Se não quiser instalar o OpenCode CLI usado pelo provider de fallback:
 
 ## Atualização
 
+### Perfil opcional Higgsfield
+
+O perfil [higgsfield-specialist](profiles/higgsfield-specialist/README.md) acrescenta planejamento e execução via MCP, com instruções em inglês e modelo/esforço configuráveis no Pi. Ele usa a biblioteca original compartilhada em `~/.agents/skills/higgsfield`; as skills e credenciais não são copiadas para este repositório. A instalação desse perfil é separada do instalador principal.
+
 Execute:
 
 ```powershell
