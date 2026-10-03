@@ -2,9 +2,9 @@
 
 An English agent profile that plans and executes Higgsfield service deliveries using Pi's native MCP integration. It works as the main profile and as a delegated child. Defaults: `openai-codex/gpt-6.1-sol`, `high` thinking.
 
-The complete original English skill library lives in `~/.agents/skills/higgsfield`, shared across agents. Its 35 nested skills also need `~/.agents/skills/higgsfield/skills` in Pi's `settings.json` `skills` array; automatic discovery stops at the parent `SKILL.md`. The profile advertises only the library's 36 skill names and reads task-relevant bodies on demand. No skill text was changed.
+The reduced English [Higgsfield runtime library](https://github.com/rodrigojager/higgsfield-skill-runtime) lives in `~/.agents/skills/higgsfield`, shared across agents. Its 35 nested skills also need `~/.agents/skills/higgsfield/skills` in Pi's `settings.json` `skills` array; automatic discovery stops at the parent `SKILL.md`. The profile advertises only the library's 36 skill names and reads task-relevant bodies on demand. The runtime copy retains production references, templates, cached schemas, memory, and delivery preflight helpers; skill-development tests, CI, Claude-specific configuration, PDF tooling, and maintenance archives are excluded. Its changes from upstream are documented in the library repository.
 
-The checked-in profile and child MCP entry point are local additions. They do not modify the Higgsfield service, native Pi MCP implementation, or upstream skill library. Credentials are never included here.
+The checked-in profile and child MCP entry point are local additions. They do not modify the Higgsfield service or native Pi MCP implementation. The reduced skill library is published separately with upstream attribution. Credentials are never included here.
 
 With the shared skill library already installed, run in PowerShell 7:
 
@@ -12,7 +12,7 @@ With the shared skill library already installed, run in PowerShell 7:
 ./install.ps1
 ```
 
-This merges only the Higgsfield MCP entry and nested skill path, and installs the profile and child entry point. Existing MCP servers and other settings remain. Each changed existing file is backed up. It does not install/move the upstream library, replace switcher packages, reload Pi, stop jobs, or initiate paid generation.
+This merges only the Higgsfield MCP entry and nested skill path, and installs the profile and child entry point. Existing MCP servers and other settings remain. Each changed existing configuration file is backed up. It does not install/move the skill library, replace switcher packages, reload Pi, stop jobs, or initiate paid generation.
 
 Use Pi 1.0.0 or later, [Rodrigo's agent switcher](https://github.com/rodrigojager/pi-agent-switcher) `v0.3.0-rodrigo.2` or later, and [Rodrigo's subagent runtime](https://github.com/rodrigojager/pi-subagent) `v0.12.4-rodrigo.2` or later. Activate after current work finishes with `/reload`.
 
